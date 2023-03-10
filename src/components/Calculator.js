@@ -1,8 +1,9 @@
 import React from "react";
+import "./calculator.css";
 
 function Calculator({ display, expression, handleClick, getResult }) {
   return (
-    <div className="App">
+    <div className="calculator-wrapper">
       <h3 className="display">{display}</h3>
 
       <span className="expression">{expression}</span>

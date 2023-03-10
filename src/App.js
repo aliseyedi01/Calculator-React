@@ -12,8 +12,12 @@ function App() {
   }
 
   function getResult() {
-    setDisplay(eval(expression));
-    setExpression(" ");
+    console.log(expression, typeof expression);
+    const calculate = expression.join("").toString();
+    const result = eval(calculate);
+
+    setDisplay(result);
+    setExpression("");
   }
 
   return (
