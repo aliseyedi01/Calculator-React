@@ -26,8 +26,8 @@ function Calculator({ display, expression, handleClick, getResult }) {
         </section>
 
         <section className="operators">
-          <button onClick={() => handleClick("÷")}>÷</button>
-          <button onClick={() => handleClick("x")}>x</button>
+          <button onClick={() => handleClick("/")}>÷</button>
+          <button onClick={() => handleClick("*")}>x</button>
           <button onClick={() => handleClick("-")}>-</button>
           <button onClick={() => handleClick("+")}>+</button>
           <button onClick={() => getResult()}> =</button>
